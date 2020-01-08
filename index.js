@@ -21,7 +21,6 @@ bot.on('message', msg => {
         return
 
     const args = msg.content.split(/ +/);
-    console.log(args)
     const command = args.shift().toLowerCase();
 
     if (!bot.commands.has(command)) return;
